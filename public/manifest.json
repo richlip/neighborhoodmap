@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "muma App",
+  "name": "munich map App",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,9 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "start_url": "index.html?launcher=true",
+    "background_color": "#892124",
+    "theme_color": "#892124",
+    "display": "standalone",
+    "orientation": "natural"
 }
