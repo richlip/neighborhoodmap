@@ -4,6 +4,26 @@ import './App.css';
 
 
 class App extends Component {
+  /**
+   * Constructor
+   */
+  constructor(props) {
+    super(props);
+    this.state = {
+      alllocations: require("./poi.json"),
+      map: "",
+      infowindow: "",
+      prevmarker: ""
+    };
+
+    // retain object instance when used in the function
+    this.initMap = this.initMap.bind(this);
+    this.openInfoWindow = this.openInfoWindow.bind(this);
+    this.closeInfoWindow = this.closeInfoWindow.bind(this);
+  }
+
+
+
   render() {
     return (
       <div className="App">
