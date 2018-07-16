@@ -1,14 +1,14 @@
 [
   {
-    "name": "",
-    "type": "",
-    "latitude": ,
-    "longitude": 
+    "name": "Eisbachwelle",
+    "type": "Sehenwürdigkeit",
+    "latitude": 48.143582,
+    "longitude": 11.587744
   },
     {
-    "name": "",
-    "type": "",
-    "latitude": ,
-    "longitude": 
+    "name": "Fuenf Hoefe",
+    "type": "Einkaufspassage",
+    "latitude": 48.140676,
+    "longitude": 11.575609
   }
 ]

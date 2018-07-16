@@ -1,0 +1,39 @@
+.search-field {
+  position: absolute;
+  max-height: 50%;
+  overflow: auto;
+  left: 5.0%;
+  bottom: 5.0%;
+  z-index: 2;
+  background-color: rgb(32, 132, 178);
+}
+
+.search {
+  z-index: 1;
+  position: fixed;
+  top: 5px;
+  right: px;
+}
+
+.search-field {
+  width: 330px;
+  padding: 5px;
+}
+
+.search-field {
+  font-size: 1.1em;
+  float: right;
+}
+
+.location-list {
+  padding: 0;
+  margin: 5px;
+  overflow: auto;
+}
+
+.search-input {
+  padding: 5px 10px;
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
