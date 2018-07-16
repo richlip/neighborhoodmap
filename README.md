@@ -1,10 +1,11 @@
 # my munich map aka neighborhood map - a react project
 
-##
+## What is inside?
+This is an map of my munich with points of interesst, where i stay often. There are 5 markers with a link to more details on foursquare.
+
 
 ## my thoughts before i started
-first of all, i thought about what should be in one file, what should be in an seperate file, for example, the lon/lat of interessting points are in an seperate file "poi.json" for a better readability.
-Even the sidebar was lots of thoughts about, as there are many different concepts. I decided to keep it simple, three bars...
+first of all, i thought about what should be in one file, what should be in an seperate file, for example, the lon/lat of interessting points are will be in an  seperate file "poi.json" for a better readability in the next version.
 
 
 ## How to install/run the app
