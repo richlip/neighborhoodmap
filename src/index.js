@@ -7,4 +7,4 @@ import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();
-console.log(registerServiceWorker());
+console.log(registerServiceWorker('Yeah, glad you made it, my good ol serviceworker'));

@@ -161,7 +161,7 @@ class App extends Component {
         });
       })
       .catch(function(err) {
-        self.state.infowindow.setContent("Google maps cannot be loaded");
+        self.state.infowindow.setContent("Sorry, data cannot be loaded from foursquare");
       });
   }
 
@@ -203,7 +203,8 @@ function loadMapJS(src) {
   script.src = src;
   script.async = true;
   script.onerror = function() {
-    document.write("Google Maps wont load");
+    document.write("Google Maps wontttt load");
+    console.log('connection lost');
   };
   ref.parentNode.insertBefore(script, ref);
 }
