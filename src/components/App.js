@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import LocList from "./LocList";
 
 class App extends Component {
-  /**
-   * Constructor
-   */
-  constructor(props) {
+  
+  // Constructor
+   constructor(props) {
     super(props);
     this.state = {
       locations: [{
@@ -52,9 +51,7 @@ class App extends Component {
     );
   }
 
-  /**
-   * Initialise the map once the google map script is loaded
-   */
+    //Initialize gmaps
   initMap() {
     var self = this;
 
@@ -117,10 +114,7 @@ class App extends Component {
     });
   }
 
-  /**
-   * Open the infoBox for the marker
-   * @param {object} location marker
-   */
+  //Infobox
   openInfoBox(marker) {
     this.closeInfoBox();
     this.state.infowindow.open(this.state.map, marker);
@@ -134,9 +128,7 @@ class App extends Component {
     this.getMarkerInfo(marker);
   }
 
-  /**
-   * Retrive the location data from the foursquare api
-   */
+  //data of foursquare
   getMarkerInfo(marker) {
     var self = this;
 
@@ -145,7 +137,7 @@ class App extends Component {
     fetch(url)
       .then(function(response) {
         if (response.status !== 200) {
-          self.state.infowindow.setContent("Sorry data can't be loaded");
+          self.state.infowindow.setContent("No data, no fun...");
           return;
         }
 
@@ -169,15 +161,12 @@ class App extends Component {
         });
       })
       .catch(function(err) {
-        self.state.infowindow.setContent("Sorry data can't be loaded");
+        self.state.infowindow.setContent("No data, no fun...");
       });
   }
 
-  /**
-   * Close the info window previously opened
-   *
-   * @memberof App
-   */
+  
+  // Close the info window
   closeInfoBox() {
     if (this.state.marker) {
       this.state.marker.setAnimation(null);
@@ -188,9 +177,8 @@ class App extends Component {
     this.state.infowindow.close();
   }
 
-  /**
-   * Render for react
-   */
+  
+  // Render
   render() {
     return (
       <div>
@@ -208,17 +196,14 @@ class App extends Component {
 
 export default App;
 
-/**
- * Load the google maps
- * @param {src} url of the google maps script
- */
+//loading gmaps
 function loadMapJS(src) {
   var ref = window.document.getElementsByTagName("script")[0];
   var script = window.document.createElement("script");
   script.src = src;
   script.async = true;
   script.onerror = function() {
-    document.write("Google Maps can't be loaded");
+    document.write("Google Maps wont load");
   };
   ref.parentNode.insertBefore(script, ref);
 }

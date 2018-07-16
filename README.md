@@ -6,7 +6,7 @@ This is an map of my munich with points of interesst, where i stay often. There 
 ## my thoughts before i started
 first of all, i thought about what should be in one file, what should be in an seperate file, for example, the lon/lat of interessting points included in the app.js file will be in an  seperate file "poi.json" for a better readability in the next version.
 
-
+one more remark, i not included a "burgermenu" for this version, as my menu is with maps good readible in mobile version, but is planned for a future release.
 
 ## How to install/run the app
 
