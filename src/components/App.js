@@ -118,9 +118,9 @@ class App extends Component {
   openInfoBox(marker) {
     this.closeInfoBox();
     this.state.infowindow.open(this.state.map, marker);
-    marker.setAnimation(window.google.maps.Animation.DROP);
+    marker.setAnimation(window.google.maps.Animation.BOUNCE);
     this.setState({
-      prevmarker: marker
+      marker: marker
     });
     this.state.infowindow.setContent("Loading Data...");
     this.state.map.setCenter(marker.getPosition());
@@ -161,7 +161,7 @@ class App extends Component {
         });
       })
       .catch(function(err) {
-        self.state.infowindow.setContent("No data, no fun...");
+        self.state.infowindow.setContent("Google maps cannot be loaded");
       });
   }
 
