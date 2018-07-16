@@ -203,7 +203,7 @@ function loadMapJS(src) {
   script.src = src;
   script.async = true;
   script.onerror = function() {
-    document.write("Google Maps wontttt load");
+    document.write("Google Maps wont load");
     console.log('connection lost');
   };
   ref.parentNode.insertBefore(script, ref);
