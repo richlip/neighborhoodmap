@@ -47,7 +47,7 @@ class App extends Component {
   componentDidMount() {
     window.initMap = this.initMap;
     loadMapJS(
-      "https://maps.googleapis.com/maps/api/js?key=AAAIzaSyCnx_1AtdIREVDeTT9IsCMp5k9pCA1W17Q&callback=initMap"
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyCnx_1AtdIREVDeTT9IsCMp5k9pCA1W17Q&callback=initMap"
     );
   }
 
