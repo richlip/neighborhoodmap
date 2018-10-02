@@ -10,8 +10,8 @@ class App extends Component {
       locations: [{
       "name": "Viktualienmarkt",
       "type": "public market",
-      "latitude": 48.135114,
-      "longitude": 11.576255
+      "latitude": 48.135021,
+      "longitude": 11.570180
       }, {
       "name": "Turmstüberl",
       "type": "coffeeshop",
